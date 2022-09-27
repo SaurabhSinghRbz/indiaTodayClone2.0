@@ -1,0 +1,1050 @@
+@import url("./footer.css");
+@import url("./navbar.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navBar styling starts from here --> */
+#sidebar {
+    height: 100vw;
+    width: 200px;
+
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+#navbar {
+    display: flex;
+    background-color: #a00606;
+    width: 1400px;
+    gap: 100px;
+    position: sticky;
+}
+
+#topics {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    padding: none;
+
+    white-space: nowrap;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#topics>div>a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+
+    text-align: center;
+}
+
+#icons {
+
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+#icons>a>img {
+    height: 25px;
+    width: 25px;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#icons>a {
+    height: 25px;
+    width: 25px;
+
+}
+
+#icons> :nth-child(2) {
+    margin-right: 30px;
+}
+
+#icons> :first-child {
+    height: 23px;
+    width: 19px;
+}
+
+.items {
+    display: flex;
+    border-right: 1px solid black;
+
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+input.base {
+    z-index: 1;
+    transition: left 2s;
+    position: relative;
+    left: -200px;
+    display: none;
+
+}
+
+#searchicon {
+    z-index: 999;
+}
+
+input.visible {
+    left: -300px;
+
+}
+
+#searchbar>input {
+    height: 45px;
+    width: 200px;
+}
+
+#sidebar1 {
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 20px;
+}
+
+#mobilesidebar {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 125px;
+
+    z-index: 1000000;
+    height: 3000px;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.mobilesidebaritems {
+    display: none;
+}
+
+#sidebar1 {
+    display: none;
+    height: 15px;
+    width: 20px;
+}
+
+#mobilebitcoin {
+    display: none;
+}
+
+.user {
+    display: none;
+}
+
+hr {
+    visibility: hidden;
+}
+
+@media (max-width: 290px) {
+    #navbar {
+        display: none;
+    }
+
+    #sidebar1 {
+        display: block;
+
+    }
+
+}
+
+@media (min-width: 280px) and (max-width: 550px) {
+    #navbar {
+        display: none;
+    }
+
+    #sidebar1 {
+        display: block;
+        position: absolute;
+        left: -30px;
+        margin-right: 30px;
+    }
+
+    #two {
+
+        width: 100vw;
+        justify-content: space-evenly;
+        box-shadow: 0px 3px rgba(163, 161, 161, 0.2);
+        margin-left: 10px;
+    }
+
+    #two h3 {
+        font-size: small;
+        font-weight: 400;
+    }
+
+    #mobilebitcoin {
+        display: block;
+        height: 30px;
+
+    }
+
+    hr {
+        display: block;
+    }
+
+    #mobilesidebar {
+
+        background-color: #e9dfdf;
+    }
+
+    .mobilesidebaritems {
+        display: block;
+        color: rgb(105, 101, 101);
+        padding: 10px;
+        border-top: .5px solid rgba(105, 101, 101, 0.3);
+    }
+
+    .user a {
+        margin: auto;
+        margin-top: 0px;
+        position: absolute;
+        top: 10;
+        color: #6d6f72;
+        text-decoration: none;
+
+    }
+
+
+
+    .user img {
+
+        height: 40px;
+        width: 40px;
+    }
+
+    .user {
+        display: block;
+    }
+
+    .user input {
+        width: 80%;
+        height: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #one {
+        display: none;
+    }
+}
+
+/* #head {
+    height: 40px;
+    width: 100%;
+    background-color: aqua;
+}
+
+#navbar {
+    height: 150px;
+    width: 100%;
+    background-color: blueviolet;
+} */
+
+#articleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0% 6%;
+    height: auto;
+}
+
+#showArticle {
+    /* border: 1px solid red; */
+    height: 100%;
+    grid-column: 1/3;
+}
+
+#showCategoery {
+    overflow: hidden;
+    line-height: 20px;
+    height: 20px;
+    font-size: 15px;
+    margin: 5px 0;
+    color: grey;
+}
+
+#showArticle>h1 {
+    margin-top: 3vh;
+}
+
+#showArticle em {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 5vh;
+    display: inline-block;
+}
+
+#authorDetails {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+#authorPicBox {
+    display: flex;
+    align-items: center;
+}
+
+
+#authorPicBox p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#authorPicBox>div>img {
+    border-radius: 50%;
+    width: 70px;
+}
+
+#socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: right;
+}
+
+.social-icons {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.social-icons:hover {
+    transform: scale(1.2);
+}
+
+
+#posterBox {
+    margin: 20px 0;
+    height: 500px;
+    width: 100%;
+}
+
+#posterBox>img {
+    height: 100%;
+    width: 100%;
+}
+
+#audioBox {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+#audioBox>div>p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+}
+
+#speedButtons {
+    margin-top: 20px;
+    visibility: hidden;
+    width: max-content;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    overflow: hidden;
+}
+
+#speedButtons>span {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    width: 35px;
+}
+
+#speedButtons>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 3px;
+    background-color: grey;
+}
+
+#speedButtons>button:hover {
+    cursor: pointer;
+
+}
+
+#increaseSpeed {
+    border: none;
+    border-left: 1px solid black;
+}
+
+#decreaseSpeed {
+    border: none;
+    border-right: 1px solid black;
+}
+
+#playPauseAudio {
+    height: 60px;
+}
+
+#playPauseAudio:hover {
+    cursor: pointer;
+}
+
+#newsContentBox {
+    height: 70vh;
+    overflow: hidden;
+}
+
+#newsContent1,
+#newsContent2,
+#newsContent3,
+#newsContent4 {
+    line-height: 35px;
+    font-size: 18px;
+
+}
+
+
+#readMoreButt {
+    background: transparent;
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#readMoreButt>button {
+    padding: 8px 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(209, 1, 1, 0.863);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#readMoreButt>button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#subscribeBox {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 1px 1px 3px #00000026;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    padding: 15px 20px 0px;
+    margin: 3px 0 20px 0;
+}
+
+#subscribeBox>:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 15px 0;
+}
+
+#subscribeBox>:nth-child(2) {
+    display: flex;
+}
+
+#subscribeBox>:nth-child(2)>input {
+    height: 38px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px 0 0 5px;
+    width: 92%;
+    font-size: 16px;
+    border-top: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    border-right: 0px;
+    background: #fff;
+    font-size: 16px;
+    color: #000;
+}
+
+#subscribeBox>:nth-child(2)>button {
+    width: 8%;
+    font-size: 16px;
+    border-radius: 0px 5px 5px 0;
+    border: none;
+    background-color: rgba(209, 1, 1, 0.863);
+    color: #fff;
+    font-weight: 500;
+}
+
+#subscribeBox>:nth-child(2)>button:hover {
+    cursor: pointer;
+}
+
+#checkBox {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    color: grey;
+}
+
+#checkBox>input {
+    padding: 15px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#commentBox {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+#commentBox>button {
+    padding: 5px 10px;
+    border: 2px solid rgba(209, 1, 1, 0.863);
+    color: rgba(209, 1, 1, 0.863);
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#commentBox>button:hover {
+    cursor: pointer;
+    background-color: rgba(209, 1, 1, 0.863);
+    color: white;
+}
+
+
+
+
+/* SideDiv starts from here -----> */
+
+#suggestedArticle {
+    margin: 8vh 0;
+    border: 1px solid lightgrey;
+    padding-top: 30px 0;
+    border-bottom: none;
+    height: fit-content;
+}
+
+#suggestedArticle>div {
+    height: auto;
+    margin-bottom: 50px;
+    /* background-color: yellow; */
+}
+
+#suggestedArticle>:last-child {
+    margin-bottom: 0;
+}
+
+.suggestedHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0 25px;
+}
+
+.suggestedHeading>h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bb0a0a;
+    position: relative;
+    font-family: "OpenSans-Bold";
+    font-size: 20px;
+    line-height: 24px;
+    min-width: fit-content;
+}
+
+.suggestedHeading>p {
+    background: #ddd;
+    height: 5px;
+    width: 100%;
+
+}
+
+.smallPoster {
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.smallPoster>:first-child:hover {
+    cursor: pointer;
+    color: rgb(60, 60, 184);
+
+}
+
+.smallPoster>:first-child {
+    padding-left: 25px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+
+
+.smallPoster>:last-child {
+    overflow: hidden;
+    margin-right: 25px;
+}
+
+.smallPoster img {
+    height: 100%;
+    width: 100%;
+}
+
+.smallPoster img:hover {
+    transform: scale(1.2);
+    transition: all .5s ease 0s;
+    cursor: pointer;
+}
+
+.bigPoster {
+    padding: 15px 0px;
+}
+
+.bigPoster:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(60, 60, 184);
+}
+
+.bigPoster>div {
+    margin: 0 25px;
+    height: 160px;
+    overflow: hidden;
+
+}
+
+.bigPoster>div>img {
+    width: 100%;
+}
+
+.bigPoster>p {
+    padding: 10px 25px;
+    border-bottom: 1px solid darkgray;
+}
+
+.bigPoster img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease 0s;
+}
+
+
+
+
+/* styling for related articles ---> */
+#relatedArticle {
+    height: auto;
+    width: 100%;
+    /* background-color: violet; */
+}
+
+#bigArticlePoster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+}
+
+#bigArticlePoster>div {
+    height: 320px;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+#bigArticlePoster>div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#bigArticlePoster>div>img {
+    height: 75%;
+    width: 100%;
+
+}
+
+#bigArticlePoster>div>img:hover {
+    transform: scale(1.05);
+    transition: all .5s ease 0s;
+}
+
+#bigArticlePoster>div>p {
+    padding: 12px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.0px;
+    line-height: 22.0px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#smallArticlePoster {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 40px 0;
+}
+
+#smallArticlePoster>div {
+    height: 200px;
+    /* border: 1px solid blue; */
+    overflow: hidden;
+}
+
+#smallArticlePoster>div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#smallArticlePoster>div>img {
+    height: 75%;
+    width: 100%;
+}
+
+#smallArticlePoster>div>img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease 0s;
+}
+
+#smallArticlePoster>div>p {
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.0px;
+    line-height: 22.0px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+#loadMoreButt {
+    background: transparent;
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#loadMoreButt>button {
+    padding: 8px 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(209, 1, 1, 0.863);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#loadMoreButt>button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s ease 0s;
+}
+
+
+
+/* media query starts from here ---> */
+@media (max-width: 290px) {
+
+    /* svg[Attributes Style] {
+        width: 54.799;
+        height: 40.255;
+    } */
+    #Bitcoins-logo-Dark_mode {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #posterBox {
+        margin: 10px 0;
+        height: 280px;
+        width: 100%;
+    }
+
+    #articleContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        padding: 0 4%;
+    }
+
+    #bigArticlePoster {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+    }
+
+    #bigArticlePoster>div {
+        height: 200px;
+        padding: 15px 0 0 0;
+        border-bottom: 1px solid grey;
+    }
+
+    #smallArticlePoster {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        margin: 0px 0;
+    }
+
+    #smallArticlePoster>div {
+        height: 200px;
+        padding: 15px 0 0 0;
+        border-bottom: 1px solid grey;
+    }
+
+    #authorDetails {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin-top: 10px;
+    }
+
+    #authorDetails>div {
+        margin: 10px 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 291px) and (max-width: 538px) {
+    #two {
+        overflow: hidden;
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        box-shadow: 0px 3px rgb(163 161 161 / 20%);
+        gap: 0px;
+        padding: 10px 5px 10px 8px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    h3>a {
+        text-decoration: none;
+        color: #575757;
+        font-size: 12px;
+        /* font-size: larger; */
+    }
+
+    #two img {
+        height: 60px;
+        width: 80px;
+    }
+
+    #Bitcoins-logo-Dark_mode {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #authorDetails {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin-top: 10px;
+    }
+
+    #authorDetails>div {
+        margin: 10px 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #posterBox {
+        margin: 20px 0;
+        height: 380px;
+        width: 100%;
+    }
+
+    #articleContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        padding: 0 4%;
+    }
+
+    #bigArticlePoster {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+    }
+
+    #bigArticlePoster>div {
+        height: 300px;
+        padding: 15px 0 0 0;
+        border-bottom: 1px solid grey;
+    }
+
+    #smallArticlePoster {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        margin: 0px 0;
+    }
+
+    #smallArticlePoster>div {
+        height: 300px;
+        padding: 15px 0 0 0;
+        border-bottom: 1px solid grey;
+    }
+}
+
+
+@media (min-width: 539px) and (max-width: 920px) {
+    #sidebar1 {
+        display: block;
+        position: absolute;
+        left: -30px;
+        margin-right: 30px;
+    }
+
+    .mobilesidebaritems {
+        display: block;
+    }
+
+    #two {
+        overflow: hidden;
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        box-shadow: 0px 3px rgb(163 161 161 / 20%);
+        gap: 0px;
+        padding: 10px 5px 10px 8px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    h3>a {
+        text-decoration: none;
+        color: #575757;
+        font-size: larger;
+        /* font-size: larger; */
+    }
+
+    #two img {
+        height: 60px;
+        width: 100px;
+    }
+
+    #navBar,
+    #one {
+        display: none;
+    }
+
+    #Bitcoins-logo-Dark_mode {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    #authorDetails {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin-top: 10px;
+    }
+
+    #authorDetails>div {
+        margin: 10px 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #posterBox {
+        margin: 20px 0;
+        height: 400px;
+        width: 100%;
+    }
+
+    #articleContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        padding: 0 4%;
+    }
+
+    .bigPoster>div {
+        margin: 0 25px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .bigPoster>p {
+        font-size: 20px;
+    }
+}

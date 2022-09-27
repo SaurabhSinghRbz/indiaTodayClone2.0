@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#headBar {
+    background-color: #151515;
+    height: 50px;
+    display: flex;
+    padding: 0px 7%;
+    justify-content: space-between;
+}
+
+#headBar>:last-child>img {
+    margin: -10px 0 0 0;
+    padding: 0;
+    height: 100px;
+}
+
+.horizontalLine {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+    font-size: 18px;
+    width: 50%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.horizontalLine>:last-child,
+.horizontalLine>:first-child {
+    margin: 3px 10px 0 10px;
+    height: 1px;
+    background-color: #e9e9e9;
+    width: 20%;
+}
+
+#signupOptions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#signupOptions>img {
+    /* border: 1px solid #ddd; */
+    height: 40px;
+    border-radius: 2px;
+}
+
+#signupOptions>img:hover {
+    cursor: pointer;
+}
+
+.ortxt {
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#inputBoxes {
+    margin: 20px auto;
+    width: 46%;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+#inputBoxes>:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 35px;
+}
+
+#inputBoxes>div>div {
+    width: 100%;
+    height: 42px;
+    margin: 15px 0;
+}
+
+#inputBoxes>div>div>select,
+#inputBoxes>div>div>input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.checkBoxes {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.checkBoxes>input {
+    box-sizing: border-box;
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+    color: #185bc5
+}
+
+.checkBoxes>input:hover {
+    cursor: pointer;
+}
+
+.checkBoxes>label {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+label>a {
+    color: #185bc5;
+    text-decoration: none;
+}
+
+#submitButt {
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    background: url('../Images/signup/submitBack.png') no-repeat;
+    background-size: cover;
+}
+
+#submitButt:hover {
+    cursor: pointer;
+}
+
+#inputBoxes p>span,
+#inputBoxes p>a>span {
+    color: red;
+}
+
+#inputBoxes p>a {
+    text-decoration: none;
+}
+
+.channelLinks {
+    background: #e9e9e9;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: auto;
+    gap: 20px;
+}
+
+.sitelog {
+    width: 60px;
+    background: #fff;
+    padding: 12px 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sitelog img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+.signUp-footer {
+    background-color: #151515;
+    margin-top: 100px;
+    padding: 5px 0;
+    border-top: 1px solid #666;
+    color: #666;
+    font-family: Roboto-regular;
+    font-size: 13px;
+    text-align: center;
+}
