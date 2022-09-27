@@ -127,7 +127,7 @@ categories1.forEach(element => {
 async function fetchcategoriedata(element) {
     try {
         let rnum = Math.floor((Math.random() * 100) + 1)
-        let res = await fetch(`http://localhost:3000/articles?_start=${rnum}q=${element}&_limit=5`)
+        let res = await fetch(`https://india-today-news-api.herokuapp.com/articles?_start=${rnum}q=${element}&_limit=5`)
         let data = await res.json()
         //console.log(data)
         displaycategoriesdata(element, data)

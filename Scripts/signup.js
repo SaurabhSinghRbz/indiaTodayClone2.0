@@ -2,7 +2,7 @@ window.speechSynthesis.cancel();
 
 document.getElementById("submitButt").addEventListener("click", async () => {
     try {
-        let res = await fetch('http://localhost:3000/userDeatails')
+        let res = await fetch('https://india-today-news-api.herokuapp.com/registerdUser')
         let data = await res.json();
         // console.log(data)
         let newestId = data.length + 1
@@ -22,7 +22,7 @@ async function addUserData() {
             "country": document.getElementById("country").value,
             "password": document.getElementById("password").value
         }
-        let res = await fetch("http://localhost:3000/userDeatails", {
+        let res = await fetch("https://india-today-news-api.herokuapp.com/registerdUser", {
             method: "POST",
             body: JSON.stringify(userData),
             headers: {

@@ -75,7 +75,7 @@ const getData = async (url) => {
 var newsDataForLoadMore;
 const initFunction = async () => {
     try {
-        let newsData = await getData("http://localhost:3000/articles")
+        let newsData = await getData("https://india-today-news-api.herokuapp.com/articles")
         newsDataForLoadMore = newsData
         // console.log(newsData)
         displayNews(newsData)

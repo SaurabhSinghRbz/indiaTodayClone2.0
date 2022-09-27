@@ -10,7 +10,7 @@ document.getElementById("head").innerHTML = header()
 
 document.getElementById("footerContainer").innerHTML = footer()
 
-let url = "http://localhost:3000/articles"
+let url = "https://india-today-news-api.herokuapp.com/articles"
 
 
 let getData = async () => {
