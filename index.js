@@ -119,7 +119,6 @@ let categories1 = [
     "HOROSCOPES",
     "FACTCHECK"]
 
-
 categories1.forEach(element => {
 
     fetchcategoriedata(element)
@@ -134,7 +133,6 @@ async function fetchcategoriedata(element) {
     } catch (error) {
         console.log(error)
     }
-
 }
 function displaycategoriesdata(element1, data) {
     if (data.length < 5) {
