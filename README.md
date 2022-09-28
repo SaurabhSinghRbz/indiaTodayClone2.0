@@ -20,7 +20,7 @@
 
 ### First you clone or download this project from here.
 
-https://github.com/SaurabhSinghRbz/india-today-clone.git
+https://github.com/SaurabhSinghRbz/indiaTodayClone2.0.git
 
 ### And then open it in VS Code and then open page with live server.
 
