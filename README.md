@@ -37,14 +37,16 @@ https://github.com/SaurabhSinghRbz/indiaTodayClone2.0.git
 
 # Technologies Used
 
-- We used  [HTML-5](https://www.w3schools.com/html/) ,  [CSS-3](https://www.w3schools.com/css/default.asp) for front-end.
-- [Javascript](https://www.w3schools.com/js/default.asp) for back-end.
-- Localstorage is used for the data storing purpose (as we are not introduced to the databases till now).
+- [Javascript](https://www.w3schools.com/js/default.asp)
+- [HTML-5](https://www.w3schools.com/html/)   
+- [CSS-3](https://www.w3schools.com/css/default.asp)
+- [JSON](https://www.json.org/json-en.html)
+- [Localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 # Tools
 
 -  [VS Code](https://code.visualstudio.com/download) to write code.
--  [Github](https://github.com/shivam-singh-au17) to used for version control.
+-  [Github](https://github.com/SaurabhSinghRbz) to used for version control.
 
 # Tools for communication
 
