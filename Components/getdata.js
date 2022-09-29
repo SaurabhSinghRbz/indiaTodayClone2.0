@@ -12,7 +12,7 @@ async function fetchfeatureddata(displayfeatueddata) {
 
         let feedsres = await fetch(`https://india-today-news-api.herokuapp.com/articles?_start=${rnum}&_limit=100`)
         let feedsdata = await feedsres.json()
-        console.log(feedsdata)
+        // console.log(feedsdata)
         displayfeatueddata(featureddata, topdata, feedsdata, detailedarticle)
     } catch (error) {
         console.log(error)

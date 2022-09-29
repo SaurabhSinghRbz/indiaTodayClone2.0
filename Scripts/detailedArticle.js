@@ -238,7 +238,7 @@ document.getElementById("commentCount").innerHTML = `POST A COMMENT (${count})`
 
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * 668)
+    return Math.floor(Math.random() * 1368)
 }
 
 
