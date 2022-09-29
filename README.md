@@ -4,7 +4,7 @@
 ![India-Today](https://user-images.githubusercontent.com/90378786/181925792-c2ce7e35-ceca-4325-b4c9-f242c40fa49f.jpg)
 #
 
-# About The India Today Group
+## About The India Today Group
 
 ### The India Today Group is India's most respected and diversified media conglomerate that has created an enviable legacy of trust, credibility and admiration since the Group's inception over four decades ago. The launch of the India Today magazine in 1975 started the Group’s journey into a multi brand, multi-platform and multi-vertical media group, with brands that command undisputed leadership across categories and reach out to more than 30 crore viewers, readers, listeners, and subscribers. The Group, through its years of consistent focus on journalistic and editorial excellence, has become the epitome of the Gold Standard of Journalism. It is the barometer for trust, integrity and excellence in media across TV, Publishing, Digital and other platforms.
 
@@ -16,7 +16,7 @@
 
 ### ITMI could not have been founded on firmer grounding. The India Today Group's strength of understanding and delivering high-quality matter has not only rubbed off on the institute, we carry the torch further by making a difference to the profession as a whole.
 #
-# Steps to browse the project:
+## Steps to browse the project:
 
 ### First you clone or download this project from here.
 
@@ -35,7 +35,7 @@ https://github.com/SaurabhSinghRbz/indiaTodayClone2.0.git
 * If some flaws are found in the original website, try to solve them as well.
 
 
-# Technologies Used
+## Technologies Used
 
 - [Javascript](https://www.w3schools.com/js/default.asp)
 - [HTML-5](https://www.w3schools.com/html/)   
@@ -43,12 +43,12 @@ https://github.com/SaurabhSinghRbz/indiaTodayClone2.0.git
 - [JSON](https://www.json.org/json-en.html)
 - [Localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-# Tools
+## Tools
 
 -  [VS Code](https://code.visualstudio.com/download) to write code.
 -  [Github](https://github.com/SaurabhSinghRbz) to used for version control.
 
-# Tools for communication
+## Tools for communication
 
 -  [Slack](https://slack.com/intl/en-in/) for communication.
 -  [Zoom](https://zoom.us/) for show work.
