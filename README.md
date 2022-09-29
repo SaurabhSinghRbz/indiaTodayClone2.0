@@ -52,3 +52,7 @@ https://github.com/SaurabhSinghRbz/indiaTodayClone2.0.git
 
 -  [Slack](https://slack.com/intl/en-in/) for communication.
 -  [Zoom](https://zoom.us/) for show work.
+
+## Roles and Responsibilities:
+- Managing the GitHub repo and merging the files.
+- I have created the news data, which contains more than 1500+ news articles.
