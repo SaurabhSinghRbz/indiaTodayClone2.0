@@ -2,7 +2,7 @@ console.log("account")
 showuserdata()
 async function showuserdata() {
     let userid = localStorage.getItem("userid")
-    let res = await fetch(` https://india-today-news-api.herokuapp.com/registerdUser/${userid}`)
+    let res = await fetch(` https://indiatoday-server.onrender.com/registerdUser/${userid}`)
     let data = await res.json();
     console.log(data)
     document.getElementById("username").innerText = data.fullName

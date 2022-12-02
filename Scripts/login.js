@@ -13,7 +13,7 @@ document.getElementById("singh1").addEventListener("click", getuserdata)
 async function getuserdata() {
 
     try {
-        let res = await fetch(`https://india-today-news-api.herokuapp.com/registerdUser`)
+        let res = await fetch(`https://indiatoday-server.onrender.com/registerdUser`)
         let data = await res.json()
         console.log(data)
         check(data)
